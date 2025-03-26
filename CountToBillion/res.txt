@@ -1,1 +1,46 @@
-Resutls
+All Results is an average of 5 loops
+python: 21.96
+C:      0.37
+Go:     0.78
+CSharp: 2.06
+
+All Results is an average of 5 loops
+python: 15.59
+C:      0.34
+Go:     0.46
+CSharp: 1.94
+
+Test Time Stamp 2025-03-25 14:11:24.278904
+All Results is an average of 5 loops
+python: 16.63
+C:      0.4
+Go:     0.39
+CSharp: 2.09
+
+Test Time Stamp 2025-03-25 14:17:26.075671
+All Results is an average of 5 loops
+python: 13.82
+C:      0.33
+Go:     0.34
+CSharp: 0.78
+
+Test Time Stamp 2025-03-25 14:21:28.226105
+All Results is an average of 5 loops
+python: 13.8
+C:      0.32
+Go:     0.31
+CSharp: 0.78
+
+Test Time Stamp 2025-03-25 14:24:17.850239
+All Results is an average of 5 loops
+python: 14.15
+C:      0.34
+Go:     0.89
+CSharp: 0.8
+
+Test Time Stamp 2025-03-25 14:27:54.795892
+All Results is an average of 5 loops
+python: 14.0
+C:      0.32
+Go:     0.4
+CSharp: 0.79
