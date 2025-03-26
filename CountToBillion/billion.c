@@ -7,6 +7,4 @@ int main() {
    for (int i = 0; i < BILLION; i++) {
       count++;
    }
-   
-   printf("Done");
 }

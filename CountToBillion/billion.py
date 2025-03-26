@@ -16,7 +16,7 @@ def test_python():
 
 
 def test_c():
-    os.system("gcc billion.c -o billion")
+    # os.system("gcc billion.c -o billion")
 
     start_time = time.time()
     os.system("./billion")
@@ -34,7 +34,7 @@ def test_go():
 
 
 def test_csharp():
-    os.system("dotnet build")
+    # os.system("dotnet build")
 
     start_time = time.time()
     os.system("./bin/Debug/net8.0/CountToBillion")
@@ -44,7 +44,7 @@ def test_csharp():
 
 
 def test_rust():
-    os.system("rustc billion-rust.rs")
+    # os.system("rustc billion-rust.rs")
 
     start_time = time.time()
     os.system("./billion-rust")
@@ -54,7 +54,7 @@ def test_rust():
 
 
 def test_java():
-    os.system("javac BillionJava.java")
+    # os.system("javac BillionJava.java")
 
     start_time = time.time()
     os.system("java BillionJava")
@@ -79,6 +79,8 @@ if __name__ == "__main__":
         c_time += test_c()
         go_time += test_go()
         csharp_time += test_csharp()
+        rust_time += test_rust()
+        java_time += test_java()
 
     print(f"All Results is an average of {LOOPS} loops")
     print("python:", round(python_time/LOOPS, 2))

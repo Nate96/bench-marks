@@ -44,3 +44,39 @@ python: 14.0
 C:      0.32
 Go:     0.4
 CSharp: 0.79
+
+Time Stamp 2025-03-26 14:30:21.361430
+All Results is an average of 5 loops
+python: 13.39
+C:      0.32
+Rust:   2.47
+Go:     0.01
+CSharp: 0.78
+Java:   0.22
+ 
+Test Time Stamp 2025-03-26 14:38:03.269971
+All Results is an average of 5 loops
+python: 13.49
+C:      0.32
+Rust:   2.43
+Go:     0.71
+CSharp: 0.77
+Java:   0.22
+ 
+Test Time Stamp 2025-03-26 14:42:48.641494
+All Results is an average of 5 loops
+python: 13.62
+C:      0.32
+Rust:   2.47
+Go:     0.34
+CSharp: 0.79
+Java:   0.22
+
+Test Time Stamp 2025-03-26 17:40:47.961576
+All Results is an average of 5 loops
+python: 14.01
+Rust:   2.53
+C:      0.33
+Go:     0.24
+Java:   0.25
+CSharp: 0.79
