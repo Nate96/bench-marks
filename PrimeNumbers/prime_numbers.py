@@ -28,14 +28,77 @@ def test_python():
     return res, round(end_time - start_time, 2)
 
 
-if __name__ == "__main__":
-    MAX_lOOPS = 5
+def test_c():
+    # os.system("gcc billion.c -o billion")
 
+    start_time = time.time()
+    os.system("./billion")
+    end_time = time.time()
+
+    return round(end_time - start_time, 2)
+
+
+def test_go():
+    start_time = time.time()
+    os.system("go run primeNumbers.go")
+    end_time = time.time()
+
+    return round(end_time - start_time, 2)
+
+
+def test_csharp():
+    # os.system("dotnet build")
+
+    start_time = time.time()
+    os.system("./bin/Debug/net8.0/PrimeNumbers")
+    end_time = time.time()
+
+    return round(end_time - start_time, 2)
+
+
+def test_rust():
+    # os.system("rustc billion-rust.rs")
+
+    start_time = time.time()
+    os.system("./billion-rust")
+    end_time = time.time()
+
+    return round(end_time - start_time, 2)
+
+
+def test_java():
+    # os.system("javac BillionJava.java")
+
+    start_time = time.time()
+    os.system("java PrimeNumbers")
+    end_time = time.time()
+
+    return round(end_time - start_time, 2)
+
+
+if __name__ == "__main__":
     python_time = 0
-    python_res = []
+    c_time = 0
+    go_time = 0
+    csharp_time = 0
+    rust_time = 0
+    java_time = 0
+
+    LOOPS = 5
 
     print("Test Time Stamp", datetime.now())
-    for _i in range(MAX_lOOPS):
-        python_time += test_python()[1]
+    for _ in range(LOOPS):
+        python_time += test_python()
+#        c_time += test_c()
+        go_time += test_go()
+        csharp_time += test_csharp()
+#        rust_time += test_rust()
+        java_time += test_java()
 
-    print("Python:", round(python_time/MAX_lOOPS, 2))
+    print(f"All Results is an average of {LOOPS} loops")
+    print("python:", round(python_time/LOOPS, 2))
+    print("Rust:  ", round(rust_time/LOOPS, 2))
+    print("C:     ", round(c_time/LOOPS, 2))
+    print("Go:    ", round(go_time/LOOPS, 2))
+    print("Java:  ", round(java_time/LOOPS, 2))
+    print("CSharp:", round(csharp_time/LOOPS, 2))
