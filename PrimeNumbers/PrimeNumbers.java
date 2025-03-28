@@ -13,7 +13,7 @@ public class PrimeNumbers {
    }
 
    public static void main(String[] args) {
-      final int upperBound = 10000;
+      final int upperBound = 9000000;
 
       for (int i = 1; i <= upperBound; i++) {
          isPrime(i);

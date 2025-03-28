@@ -16,6 +16,6 @@ func isPrime(number int) bool {
 }
 
 func main() {
-   const upperBound int = 100000 
-    for i := 1; i <= upperBound; i++ { isPrime(i) }
+   const upperBound int = 9000000
+   for i := 1; i <= upperBound; i++ { isPrime(i) }
 }

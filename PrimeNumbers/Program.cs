@@ -17,7 +17,7 @@ class Program
 
    static void Main()
    {
-      const long UPPER_BOUND = 100000;
+      const long UPPER_BOUND = 9000000;
       for (int i = 1; i <= UPPER_BOUND; i++)
       {
          IsPrime(i);
