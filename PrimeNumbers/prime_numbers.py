@@ -3,11 +3,10 @@ import os
 import math
 from datetime import datetime
 
+UPPER_BOUND = 9000000
+
 
 def test_python():
-    # 1000000000
-    UPPER_BOUND = 100000
-
     start_time = time.time()
     res = []
 
@@ -29,7 +28,7 @@ def test_python():
 
 
 def test_c():
-    # os.system("gcc billion.c -o billion")
+    os.system("gcc c-prime-numbers.c -o c-prime-numbers -lm")
 
     start_time = time.time()
     os.system("./billion")
@@ -89,12 +88,14 @@ if __name__ == "__main__":
     print("Test Time Stamp", datetime.now())
     for _ in range(LOOPS):
         python_time += test_python()
-#        c_time += test_c()
+        c_time += test_c()
         go_time += test_go()
         csharp_time += test_csharp()
 #        rust_time += test_rust()
         java_time += test_java()
 
+    print(" ")
+    print("Finding all numbers between 0 and ", UPPER_BOUND)
     print(f"All Results is an average of {LOOPS} loops")
     print("python:", round(python_time/LOOPS, 2))
     print("Rust:  ", round(rust_time/LOOPS, 2))

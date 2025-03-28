@@ -4,7 +4,7 @@ from datetime import datetime
 
 
 def test_python():
-    BILLION = 1000000000
+    BILLION = 9000000
     count = 0
 
     start_time = time.time()
@@ -16,10 +16,10 @@ def test_python():
 
 
 def test_c():
-    # os.system("gcc billion.c -o billion")
+    os.system("gcc c-prime-numbers.c -o c-prime-numbers -lm")
 
     start_time = time.time()
-    os.system("./billion")
+    os.system("./c-prime-numbers")
     end_time = time.time()
 
     return round(end_time - start_time, 2)
