@@ -6,6 +6,6 @@ CountToBillion/BillionJava.class
 
 PrimeNumbers/bin
 PrimeNumbers/obj
-PrimeNumbers/billion
-PrimeNumbers/billion-rust
-PrimeNumbers/BillionJava.class
+PrimeNumbers/c-prime-numbers
+PrimeNumbers/rust-prime-numbers
+PrimeNumbers/PrimeNumbers.class
