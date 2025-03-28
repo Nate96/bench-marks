@@ -1,4 +1,4 @@
-fn is_prime(number: u32) -> bool {
+fn is_prime(number: u64) -> bool {
     if number <= 1 { return false; } 
 
     let max = number.isqrt();

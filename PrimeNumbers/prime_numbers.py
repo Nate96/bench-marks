@@ -8,7 +8,6 @@ UPPER_BOUND = 9000000
 
 def test_python():
     start_time = time.time()
-    res = []
 
     def is_prime(number):
         if number <= 1:
@@ -24,14 +23,14 @@ def test_python():
 #            res.append(number)
     end_time = time.time()
 
-    return res, round(end_time - start_time, 2)
+    return round(end_time - start_time, 2)
 
 
 def test_c():
-    os.system("gcc c-prime-numbers.c -o c-prime-numbers -lm")
+    # os.system("gcc c-prime-numbers.c -o c-prime-numbers -lm")
 
     start_time = time.time()
-    os.system("./billion")
+    os.system("./c-prime-numbers")
     end_time = time.time()
 
     return round(end_time - start_time, 2)
@@ -59,7 +58,7 @@ def test_rust():
     # os.system("rustc billion-rust.rs")
 
     start_time = time.time()
-    os.system("./billion-rust")
+    os.system("./rust-prime-numbers")
     end_time = time.time()
 
     return round(end_time - start_time, 2)
@@ -85,16 +84,16 @@ if __name__ == "__main__":
 
     LOOPS = 5
 
+    print(" ")
     print("Test Time Stamp", datetime.now())
     for _ in range(LOOPS):
         python_time += test_python()
         c_time += test_c()
         go_time += test_go()
         csharp_time += test_csharp()
-#        rust_time += test_rust()
+        rust_time += test_rust()
         java_time += test_java()
 
-    print(" ")
     print("Finding all numbers between 0 and ", UPPER_BOUND)
     print(f"All Results is an average of {LOOPS} loops")
     print("python:", round(python_time/LOOPS, 2))

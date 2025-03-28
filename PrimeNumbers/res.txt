@@ -1,0 +1,39 @@
+Test Time Stamp 2025-03-28 12:44:53.645817
+Finding all numbers between 0 and  9000000
+All Results is an average of 5 loops
+python: 34.77
+Rust:   0.2
+C:      1.89
+Go:     3.21
+Java:   1.87
+CSharp: 1.98
+ 
+Test Time Stamp 2025-03-28 12:51:59.795083
+Finding all numbers between 0 and  9000000
+All Results is an average of 5 loops
+python: 33.49
+Rust:   0.2
+C:      1.88
+Go:     3.12
+Java:   1.84
+CSharp: 1.95
+ 
+Test Time Stamp 2025-03-28 13:01:16.680531
+Finding all numbers between 0 and  9000000
+All Results is an average of 5 loops
+python: 34.39
+Rust:   0.22
+C:      1.91
+Go:     3.25
+Java:   1.83
+CSharp: 1.97
+ 
+Test Time Stamp 2025-03-28 13:08:31.061615
+Finding all numbers between 0 and  9000000
+All Results is an average of 5 loops
+python: 33.63
+Rust:   0.2
+C:      1.87
+Go:     3.14
+Java:   1.83
+CSharp: 1.94
